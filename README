@@ -1,4 +1,4 @@
-Welcome to the SHIELD Open Source + Binary Driver Release.
+Welcome to the SHIELD Open Source Kernel Release.
 
 In this README, you will find sync, build, and flashing instructions.
 
@@ -11,12 +11,12 @@ http://source.android.com/source/downloading.html#installing-repo
 
 mkdir ~/shield-open-source
 cd ~/shield-open-source
-repo init -u git://nv-tegra.nvidia.com/manifest/android/binary.git -b rel-29-r3-partner -m tlk/t210.xml
+repo init -u https://github.com/lexyan/nvidia-shield-atv-manifest.git -b rel-29-r3-partner -m tlk/t210.xml
 repo sync -j5
 
 
 ==========
-HowTo Build:
+HowTo Build the KERNEL aka boot.img:
 ==========
 
 Building this release requires a Linux build environment configured to
@@ -33,7 +33,7 @@ cd $TOP
 . build/envsetup.sh
 setpaths
 lunch <product>-userdebug   (See below table for selecting <product>)
-mp dev
+mp bootimage
 
 ------------------------------------------------------------
 Sr.No.|           SHEILD               |      <product>    |
@@ -42,10 +42,11 @@ Sr.No.|           SHEILD               |      <product>    |
 ------------------------------------------------------------
   2.  | SHIELD Android TV Premium      |    foster_e_hdd   |
 ------------------------------------------------------------
-
+  3.  | SHIELD Android TV 2017         |       darcy       |
+------------------------------------------------------------
 
 ==========
-HowTo Flash:
+HowTo Unlock the bootloader :
 ==========
 
 Before flashing images from this build to your SHIELD, connect your SHIELD
@@ -88,16 +89,25 @@ Select 'Confirm' to unlock the bootloader.
 
 Your device's bootloader should now be unlocked.
 
+==========
+HowTo Flash:
+==========
+
 To flash images from this build to your SHIELD, run the following commands
 from the same terminal where you did your build:
 
-fastboot oem dtbname                  (This will print the DTB name for a given product)
-
 cd $OUT
-fastboot flash recovery recovery.img
 fastboot flash boot boot.img
-fastboot flash system system.img
-fastboot flash vendor vendor.img
-fastboot flash dtb <DTB file name>    (Use result from "fastboot oem dtbname" in <DTB file name>)
 fastboot reboot
 
+==========
+HowTo Test new Kernel without Flashing:
+==========
+
+To test images from this build to your SHIELD, run the following commands
+from the same terminal where you did your build:
+
+cd $OUT
+fastboot boot boot.img
+
+Your new KERNEL is loaded until you restart the Shield
