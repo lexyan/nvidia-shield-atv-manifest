@@ -1,0 +1,89 @@
+Welcome to the SHIELD TABLET Open Source + Binary Driver Release.
+
+In this README, you will find sync, build, and flashing instructions.
+
+==========
+HowTo Sync:
+==========
+
+Syncing this release requires git and the repo tool from Google:
+http://source.android.com/source/downloading.html#installing-repo
+
+mkdir ~/shieldtablet-open-source
+cd ~/shieldtablet-open-source
+repo init -u git://nv-tegra.nvidia.com/manifest/android/binary.git -b rel-29-r3-partner -m tlk/shieldtablet.xml
+repo sync -j5
+
+
+==========
+HowTo Build:
+==========
+
+Building this release requires a Linux build environment configured to
+build Android: http://source.android.com/source/initializing.html
+
+Additionally, you will be required to agree to license terms when extracting
+the binary drivers.
+
+cd ~/shieldtablet-open-source
+export TOP=`pwd`
+cd vendor/nvidia/licensed-binaries
+./extract-nv-bins.sh
+cd $TOP
+. build/envsetup.sh
+setpaths
+lunch <product>-userdebug   (See below table for selecting <product>)
+mp dev
+
+------------------------------------------------------------
+Sr.No.|       SHEILD TABLET            |      <product>    |
+------------------------------------------------------------
+  1.  | With data only (North America) |      wx_na_do     |
+------------------------------------------------------------
+  2.  | With data only (Rest of world) |      wx_un_do     |
+------------------------------------------------------------
+  3.  | With wifi only                 |      wx_na_wf     |
+------------------------------------------------------------
+  4.  | SHIELD TABLET K1               |      sb_na_wf     |
+------------------------------------------------------------
+
+
+==========
+HowTo Flash:
+==========
+
+Before flashing images from this build to your SHIELD TABLET, connect your SHIELD TABLET
+via USB to the PC where you built this tree.
+
+Next, put your SHIELD TABLET into fastboot mode using following method:
+SW method:
+   Boot to android home screen
+   Connect the device to linux system
+   Open terminal(on linux)
+   Type "adb reboot bootloader" in terminal
+
+HW method:
+   Turn off the device
+   Press "Volume Down"> "Power", hold "Volume Down" and leave Power buttons till device boots
+
+If this is the first time you have done this procedure, you must unlock
+your bootloader. To unlock your bootloader, run the following command
+in a terminal:
+
+fastboot oem unlock
+
+Next do the following:
+   Press the "Volume Down" button to select "Unlock bootloader" option on device
+   Press the "Power" button to confirm the unlock
+
+Your device's bootloader should now be unlocked.
+
+To flash images from this build to your SHIELD TABLET, run the following commands
+from the same terminal where you did your build:
+
+cd $OUT
+fastboot flash recovery recovery.img
+fastboot flash boot boot.img
+fastboot flash system system.img
+fastboot flash userdata userdata.img
+fastboot reboot

@@ -1,0 +1,82 @@
+Welcome to the SHIELD Open Source + Binary Driver Release.
+
+In this README, you will find sync, build, and flashing instructions.
+
+==========
+HowTo Sync:
+==========
+
+Syncing this release requires git and the repo tool from Google:
+http://source.android.com/source/downloading.html#installing-repo
+
+mkdir ~/shield-open-source
+cd ~/shield-open-source
+repo init -u git://nv-tegra.nvidia.com/manifest/android/binary.git -b rel-29-r3-partner -m tlk/t210.xml
+repo sync -j5
+
+
+==========
+HowTo Build:
+==========
+
+Building this release requires a Linux build environment configured to
+build Android: http://source.android.com/source/initializing.html
+
+Additionally, you will be required to agree to license terms when extracting
+the binary drivers.
+
+cd ~/shield-open-source
+export TOP=`pwd`
+cd vendor/nvidia/licensed-binaries
+./extract-nv-bins.sh
+cd $TOP
+. build/envsetup.sh
+setpaths
+lunch darcy-userdebug
+mp dev
+
+
+==========
+HowTo Flash:
+==========
+
+Before flashing images from this build to your SHIELD, connect your SHIELD
+via USB with the port closest to Fan exhaust to the PC where you built this tree.
+
+Next, put your SHIELD into fastboot mode using following method:
+Controller method:
+1. Connect SHIELD Controller using USB cable
+2. Use USB port near HDMI port for the Controller and USB port away for PC connection
+3. Hold Button-A and Button-B on SHIELD Controller and then insert power adapter to SHIELD
+4. Wait until you see Fastboot menu on HDMI display
+5. Use X/Y to navigate
+6. Use A to select
+
+Fastboot menu navigation:
+1.  Use X/Y to navigate
+2.  Use A to select
+
+If this is the first time you have done this procedure, you must unlock
+your bootloader. To unlock your bootloader, run the following command
+in a terminal:
+
+fastboot oem unlock
+
+It will take you to '!!! READ THE FOLLOWING !!!' page.
+Two selectable options are available. 'Confirm' and 'Back to menu'.
+Select 'Confirm' to unlock the bootloader.
+
+Your device's bootloader should now be unlocked.
+
+To flash images from this build to your SHIELD, run the following commands
+from the same terminal where you did your build:
+
+fastboot oem dtbname                  (This will print the DTB name for a given product)
+
+cd $OUT
+fastboot flash recovery recovery.img
+fastboot flash boot boot.img
+fastboot flash system system.img
+fastboot flash vendor vendor.img
+fastboot flash dtb <DTB file name>    (Use result from "fastboot oem dtbname" in <DTB file name>)
+fastboot reboot

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+<remote  name="lexyan"
+           fetch="https://github.com/lexyan/" />
+<remote  name="nvidia"
+           fetch="git://nv-tegra.nvidia.com/" />
+
+  <include name="android-framework.xml"/>
+  <include name="nv-common.xml"/>
+
+  <!-- Begin MODULE dev-bootloader -->
+
+  <!-- End MODULE dev-bootloader -->
+
+  <!-- Begin MODULE dev-camera -->
+
+  <!-- End MODULE dev-camera -->
+
+  <!-- Begin MODULE dev-frameworks -->
+
+  <!-- End MODULE dev-frameworks -->
+
+  <!-- Begin MODULE dev-gfx -->
+
+  <!-- End MODULE dev-gfx -->
+
+  <!-- Begin MODULE dev-kernel -->
+
+  <!-- End MODULE dev-kernel -->
+
+  <!-- Begin MODULE dev-other -->
+  <project name="tegra/prebuilts-licensed-binary-tlk-t210" path="vendor/nvidia/licensed-binaries" revision="rel-29-r3-partner" remote="nvidia" />
+  <!-- End MODULE dev-other -->
+
+  <!-- Begin MODULE dev_a -->
+
+  <!-- End MODULE dev_a -->
+
+  <!-- Begin MODULE chips_a -->
+
+  <!-- End MODULE chips_a -->
+
+  <!-- Begin MODULE cuda_a -->
+
+  <!-- End MODULE cuda_a -->
+
+  <!-- Begin MODULE cuda_rel -->
+
+  <!-- End MODULE cuda_rel -->
+
+  <!-- Begin MODULE bugfix_main -->
+
+  <!-- End MODULE bugfix_main -->
+
+  <!-- Begin MODULE module_compiler -->
+
+  <!-- End MODULE module_compiler -->
+
+  <!-- Begin MODULE gpu-shared -->
+
+  <!-- End MODULE gpu-shared -->
+</manifest>

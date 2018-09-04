@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest>
+
+  <!-- Begin MODULE dev-bootloader -->
+
+  <!-- End MODULE dev-bootloader -->
+
+  <!-- Begin MODULE dev-camera -->
+
+  <!-- End MODULE dev-camera -->
+
+  <!-- Begin MODULE dev-frameworks -->
+
+  <!-- End MODULE dev-frameworks -->
+
+  <!-- Begin MODULE dev-gfx -->
+
+  <!-- End MODULE dev-gfx -->
+
+  <!-- Begin MODULE dev-kernel -->
+  <project name="kernel-shield-3.10" path="kernel/kernel-shield-3.10" revision="rel-29-r3-3.10-shield" remote="lexyan"/>
+  <!-- End MODULE dev-kernel -->
+
+  <!-- Begin MODULE dev-other -->
+  <project name="android/platform/vendor/nvidia/build" path="vendor/nvidia/build" revision="rel-29-r3"/>
+  <project name="nvidia-shield-device" path="device/nvidia" revision="rel-29-r3-partner" remote="lexyan"/>
+  <!-- End MODULE dev-other -->
+
+  <!-- Begin MODULE dev_a -->
+
+  <!-- End MODULE dev_a -->
+
+  <!-- Begin MODULE chips_a -->
+
+  <!-- End MODULE chips_a -->
+
+  <!-- Begin MODULE cuda_a -->
+
+  <!-- End MODULE cuda_a -->
+
+  <!-- Begin MODULE cuda_rel -->
+
+  <!-- End MODULE cuda_rel -->
+
+  <!-- Begin MODULE bugfix_main -->
+
+  <!-- End MODULE bugfix_main -->
+
+  <!-- Begin MODULE module_compiler -->
+
+  <!-- End MODULE module_compiler -->
+
+  <!-- Begin MODULE gpu-shared -->
+
+  <!-- End MODULE gpu-shared -->
+</manifest>
