@@ -128,9 +128,9 @@
   <project groups="pdk,userspace" name="android/platform/external/blktrace" path="external/blktrace" revision="rel-29-r3-o"/>
 -->
   <project groups="pdk,userspace" name="android/platform/external/boringssl" path="external/boringssl"/>
-<!--
+<!---->
   <project groups="pdk" name="android/platform/external/bouncycastle" path="external/bouncycastle"/>
--->
+
   <project groups="pdk" name="android/platform/external/bsdiff" path="external/bsdiff"/>
   <project groups="pdk" name="android/platform/external/bzip2" path="external/bzip2"/>
 <!--
