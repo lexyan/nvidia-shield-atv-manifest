@@ -5,7 +5,7 @@
            fetch="git://nv-tegra.nvidia.com/" />
 
   <remote fetch="git://nv-tegra.nvidia.com/" name="origin" review="git-master.nvidia.com/r"/>
-  <default remote="origin" revision="rel-29-r3-o-partner"/>
+  <default remote="origin" revision="rel-29-o-partner"/>
 
   <!-- Begin MODULE dev-bootloader -->
 
@@ -123,7 +123,7 @@
   <project groups="pdk-fs" name="android/platform/external/autotest" path="external/autotest" revision="rel-29-r3-o"/>
 -->
   <project groups="pdk" name="android/platform/external/avb" path="external/avb"/>
-  <project groups="pdk,userspace" name="android/platform/external/bison" path="external/bison" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/bison" path="external/bison" revision="rel-29-o"/>
 <!--
   <project groups="pdk,userspace" name="android/platform/external/blktrace" path="external/blktrace" revision="rel-29-r3-o"/>
 -->
@@ -167,7 +167,7 @@
 -->
   <project groups="pdk,userspace" name="android/platform/external/eigen" path="external/eigen"/>
   <project groups="drm_hwcomposer,pdk-fs" name="android/platform/external/drm_hwcomposer" path="external/drm_hwcomposer"/>
-  <project groups="pdk,userspace" name="android/platform/external/elfutils" path="external/elfutils" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/elfutils" path="external/elfutils" revision="rel-29-o"/>
 <!--
   <project groups="pdk" name="android/platform/external/doclava" path="external/doclava"/>
   <project groups="pdk" name="android/platform/external/donuts" path="external/donuts"/>
@@ -182,10 +182,10 @@
   <project groups="pdk" name="android/platform/external/eyes-free" path="external/eyes-free"/>
   <project groups="pdk" name="android/platform/external/fdlibm" path="external/fdlibm"/>
 -->
-  <project groups="pdk,userspace" name="android/platform/external/e2fsprogs" path="external/e2fsprogs" revision="rel-29-r3-o"/>
-  <project groups="pdk" name="android/platform/external/f2fs-tools" path="external/f2fs-tools" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/e2fsprogs" path="external/e2fsprogs" revision="rel-29-o"/>
+  <project groups="pdk" name="android/platform/external/f2fs-tools" path="external/f2fs-tools" revision="rel-29-o"/>
   <project groups="pdk,userspace" name="android/platform/external/expat" path="external/expat"/>
-  <project groups="pdk,userspace" name="android/platform/external/fec" path="external/fec" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/fec" path="external/fec" revision="rel-29-o"/>
 <!--
   <project groups="pdk" name="android/platform/external/fio" path="external/fio" revision="rel-29-r3-o"/>
   <project groups="pdk" name="android/platform/external/flac" path="external/flac"/>
@@ -245,7 +245,7 @@
   <project groups="pdk" name="android/platform/external/junit" path="external/junit"/>
   <project groups="pdk" name="android/platform/external/junit-params" path="external/junit-params"/>
 -->
-  <project groups="pdk" name="android/platform/external/kernel-headers" path="external/kernel-headers" revision="rel-29-r3-o"/>
+  <project groups="pdk" name="android/platform/external/kernel-headers" path="external/kernel-headers" revision="rel-29-o"/>
   <project groups="pdk" name="android/platform/external/kmod" path="external/kmod"/>
 <!--
   <project groups="pdk" name="android/platform/external/ksoap2" path="external/ksoap2"/>
@@ -253,7 +253,7 @@
   <project groups="pdk" name="android/platform/external/libbrillo" path="external/libbrillo"/>
 -->
   <project groups="pdk" name="android/platform/external/libcap" path="external/libcap"/>
-  <project groups="pdk" name="android/platform/external/libcap-ng" path="external/libcap-ng" revision="rel-29-r3-o"/>
+  <project groups="pdk" name="android/platform/external/libcap-ng" path="external/libcap-ng" revision="rel-29-o"/>
   <project groups="pdk,userspace" name="android/platform/external/libchrome" path="external/libchrome"/>
 <!--
   <project groups="pdk" name="android/platform/external/libconstrainedcrypto" path="external/libconstrainedcrypto"/>
@@ -266,7 +266,7 @@
   <project groups="pdk" name="android/platform/external/libdivsufsort" path="external/libdivsufsort"/>
 -->
   <project groups="pdk" name="android/platform/external/libdrm" path="external/libdrm"/>
-  <project groups="pdk,userspace" name="android/platform/external/libnl" path="external/libnl" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/libnl" path="external/libnl" revision="rel-29-o"/>
   <project groups="pdk,userspace" name="android/platform/external/libevent" path="external/libevent"/>
 <!--
   <project groups="pdk" name="android/platform/external/libedit" path="external/libedit"/>
@@ -367,7 +367,7 @@
 <!--
   <project groups="pdk" name="android/platform/external/seccomp-tests" path="external/seccomp-tests"/>
 -->
-  <project groups="pdk,userspace" name="android/platform/external/selinux" path="external/selinux" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/selinux" path="external/selinux" revision="rel-29-o"/>
 <!--
   <project groups="pdk,qcom_msm8x26,userspace-dev-camera-drivers" name="android/platform/external/sfntly" path="external/sfntly"/>
   <project groups="pdk" name="android/platform/external/shflags" path="external/shflags"/>
@@ -384,7 +384,7 @@
 -->
   <project groups="pdk,userspace" name="android/platform/external/speex" path="external/speex"/>
   <project groups="pdk,userspace-dev-camera-drivers" name="android/platform/external/sqlite" path="external/sqlite"/>
-  <project groups="pdk,userspace" name="android/platform/external/squashfs-tools" path="external/squashfs-tools" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/squashfs-tools" path="external/squashfs-tools" revision="rel-29-o"/>
 <!--
   <project groups="pdk" name="android/platform/external/strace" path="external/strace"/>
   <project groups="pdk" name="android/platform/external/stressapptest" path="external/stressapptest"/>
@@ -401,7 +401,7 @@
   <project groups="pdk,userspace" name="android/platform/external/tinyalsa" path="external/tinyalsa"/>
   <project groups="pdk,userspace" name="android/platform/external/tinyxml2" path="external/tinyxml2"/>
   <project name="android/platform/external/toolchain-utils" path="external/toolchain-utils" remote="origin"/>
-  <project groups="pdk,userspace" name="android/platform/external/valgrind" path="external/valgrind" revision="rel-29-r3-o"/>
+  <project groups="pdk,userspace" name="android/platform/external/valgrind" path="external/valgrind" revision="rel-29-o"/>
 <!--
   <project groups="pdk" name="android/platform/external/toybox" path="external/toybox"/>
   <project groups="pdk" name="android/platform/external/tpm2" path="external/tpm2"/>
@@ -632,15 +632,15 @@
   <!-- <project groups="pdk,darwin" name="android/platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" /> -->
   <!-- <project groups="pdk,darwin,mips" name="android/platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" /> -->
   <!-- <project groups="pdk,darwin,x86" name="android/platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" /> -->
-  <project groups="pdk,linux,arm,userspace" name="android/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="rel-29-r3-o"/>
-  <project groups="pdk,linux,arm,userspace" name="android/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="rel-29-r3-o"/>
-  <project groups="pdk,linux" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="rel-29-r3-o"/>
-  <project groups="pdk,linux,userspace" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="rel-29-r3-o"/>
-  <project groups="pdk-fs" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="rel-29-r3-o"/>
-  <project groups="pdk,linux,mips" name="android/platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="rel-29-r3-o"/>
-  <project groups="pdk,linux,x86" name="android/platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="rel-29-r3-o"/>
+  <project groups="pdk,linux,arm,userspace" name="android/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="rel-29-o"/>
+  <project groups="pdk,linux,arm,userspace" name="android/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="rel-29-o"/>
+  <project groups="pdk,linux" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="rel-29-o"/>
+  <project groups="pdk,linux,userspace" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="rel-29-o"/>
+  <project groups="pdk-fs" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="rel-29-o"/>
+  <project groups="pdk,linux,mips" name="android/platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="rel-29-o"/>
+  <project groups="pdk,linux,x86" name="android/platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="rel-29-o"/>
   <!-- <project groups="darwin,pdk,tradefed" name="android/platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86" /> -->
-  <project groups="linux" name="android/platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" remote="origin" revision="rel-29-r3-o"/>
+  <project groups="linux" name="android/platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" remote="origin" revision="rel-29-o"/>
 <!--
   <project groups="pdk-cw-fs,pdk-fs" name="android/platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin"/>
 -->

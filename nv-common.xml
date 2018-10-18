@@ -21,8 +21,8 @@
   <!-- End MODULE dev-kernel -->
 
   <!-- Begin MODULE dev-other -->
-  <project name="android/platform/vendor/nvidia/build" path="vendor/nvidia/build" revision="rel-29-r3"/>
-  <project name="nvidia-shield-device" path="device/nvidia" revision="rel-29-r3-partner" remote="lexyan"/>
+  <project name="android/platform/vendor/nvidia/build" path="vendor/nvidia/build" revision="rel-29"/>
+  <project name="nvidia-shield-device" path="device/nvidia" revision="rel-29-partner" remote="lexyan"/>
   <!-- End MODULE dev-other -->
 
   <!-- Begin MODULE dev_a -->

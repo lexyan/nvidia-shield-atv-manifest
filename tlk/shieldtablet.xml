@@ -24,7 +24,7 @@
   <!-- End MODULE dev-kernel -->
 
   <!-- Begin MODULE dev-other -->
-  <project name="tegra/prebuilts-licensed-binary-tlk-shieldtablet" path="vendor/nvidia/licensed-binaries" revision="rel-29-r3-partner"/>
+  <project name="tegra/prebuilts-licensed-binary-tlk-shieldtablet" path="vendor/nvidia/licensed-binaries" revision="rel-29-partner"/>
   <!-- End MODULE dev-other -->
 
   <!-- Begin MODULE dev_a -->

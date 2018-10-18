@@ -29,7 +29,7 @@
   <!-- End MODULE dev-kernel -->
 
   <!-- Begin MODULE dev-other -->
-  <project name="tegra/prebuilts-licensed-binary-tlk-t210" path="vendor/nvidia/licensed-binaries" revision="rel-29-r3-partner" remote="nvidia" />
+  <project name="tegra/prebuilts-licensed-binary-tlk-t210" path="vendor/nvidia/licensed-binaries" revision="rel-29-partner" remote="nvidia" />
   <!-- End MODULE dev-other -->
 
   <!-- Begin MODULE dev_a -->
