@@ -17,7 +17,7 @@
   <!-- End MODULE dev-gfx -->
 
   <!-- Begin MODULE dev-kernel -->
-  <project name="kernel-shield-3.10" path="kernel/kernel-shield-3.10" revision="rel-29-r3-3.10-shield" remote="lexyan"/>
+  <project name="kernel-shield-3.10" path="kernel/kernel-shield-3.10" revision="rel-29-3.10-shield" remote="lexyan"/>
   <!-- End MODULE dev-kernel -->
 
   <!-- Begin MODULE dev-other -->
